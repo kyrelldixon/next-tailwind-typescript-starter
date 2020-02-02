@@ -5,6 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "stage": "yarn build; yarn start",
     "type-check": "tsc"
   },
   "dependencies": {
