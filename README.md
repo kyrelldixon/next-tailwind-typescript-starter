@@ -1,66 +1,55 @@
-# TypeScript Next.js example
+# Tailwind CSS + TypeScript + Next.js Starter
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+This is a lightweight starterkit / boilerplate to get up and running with Tailwind CSS, TypeScript and Next.js. It is also production-ready with a Purge CSS setup.
 
-## Deploy your own
+## Why make this boilerplate?
 
-Deploy the example using [ZEIT Now](https://zeit.co/now):
+Tailwind, Next.js, and TypeScript is an excellent stack for building web apps. The most annoying part of using the stack
+is setting it up every time, so I made an easy to use template that I and many others can use.
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-typescript)
+## Usage
 
-## How to use it?
+### 1. Clone Repo
 
-### Using `create-next-app`
+Github released [Github Templates](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) which allows users to generate a new repo from a template repo that will have the exact same files and structure. You can generate your own repo from this template by using [this link](https://github.com/kyrelldixon/next-tailwind-typescript-starter/generate).
 
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+From there, you can clone your own repo and modify it however you like.
 
-```bash
-npm init next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
-```
-
-### Download manually
-
-Download the example:
+If you would rather clone this repo, go to the command line and run:
 
 ```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-typescript
-cd with-typescript
+git clone https://github.com/kyrelldixon/next-tailwind-typescript-starter <your-project-name>
+cd <your-project-name>
 ```
 
-Install it and run:
+### 2. Install Dependencies
 
 ```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
+yarn # npm i
 ```
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download)):
+### 3. Run Development Environment
 
 ```bash
-now
+yarn dev # npm run dev
 ```
 
-## Notes
+### Test Production Environment
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+I also included a `stage` script that will build and start a production server. You can run it with:
 
-```
-npm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declaratons for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
+```bash
+yarn stage # npm run stage
 ```
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+Alternatively you can run:
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+```bash
+yarn build # npm run build
+yarn start # npm start
+```
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+## Important Notes
+
+* Be sure to update the `package.json` to include your own information for the project you're working on.
+* Purge CSS will only run in production, so use either `build` or `stage` to run it and minimize your CSS file size. You can also modify the `postcss.config.js` file to enable Purge CSS in development.
