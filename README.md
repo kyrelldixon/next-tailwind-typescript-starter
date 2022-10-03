@@ -1,6 +1,6 @@
 # Tailwind CSS + TypeScript + Next.js Starter
 
-This is a lightweight starterkit / boilerplate to get up and running with Tailwind CSS, TypeScript and Next.js. It is also production-ready with a Purge CSS setup.
+This is a lightweight starterkit / boilerplate to get up and running with Tailwind CSS, TypeScript and Next.js.
 
 ## Why make this boilerplate?
 
