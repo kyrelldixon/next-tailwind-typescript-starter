@@ -1,10 +1,10 @@
-# Tailwind CSS + TypeScript + Next.js Starter
+# Tailwind CSS + TypeScript + Next.js + Cypress Starter
 
 This is a lightweight starterkit / boilerplate to get up and running with Tailwind CSS, TypeScript and Next.js.
 
 ## Why make this boilerplate?
 
-Tailwind, Next.js, and TypeScript is an excellent stack for building web apps. The most annoying part of using the stack
+Tailwind, Next.js, Cypress and TypeScript is an excellent stack for building web apps. The most annoying part of using the stack
 is setting it up every time, so I made an easy to use template that I and many others can use.
 
 ## Usage

@@ -6,7 +6,11 @@
     "build": "next build",
     "start": "next start",
     "stage": "yarn build; yarn start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "dependencies": {
     "next": "^12.3.1",
@@ -20,6 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
     "autoprefixer": "^10.4.12",
+    "cypress": "^10.11.0",
     "eslint": "^8.24.0",
     "eslint-config-next": "^12.3.1",
     "eslint-config-prettier": "^8.5.0",
